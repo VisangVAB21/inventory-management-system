@@ -128,25 +128,25 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 ## 📸 Screenshot
 
 ### Dashboard Admin
-![Dashboard Admin](screenshots/dashboard-admin.png)
+![Dashboard Admin](docs/screenshots/dashboard-admin.png)
 
 ### Dashboard Manajer
-![Dashboard Manajer](screenshots/dashboard-manajer.png)
+![Dashboard Manajer](docs/screenshots/dashboard-manajer.png)
 
 ### Dashboard Staff
-![Dashboard Staff](screenshots/dashboard-staff.png)
+![Dashboard Staff](docs/screenshots/dashboard-staff.png)
 
 ### Manajemen Produk
-![Products](screenshots/product.png)
+![Products](docs/screenshots/product.png)
 
 ### Barang Masuk
-![Stock In](screenshots/stock-in.png)
+![Stock In](docs/screenshots/stock-in.png)
 
 ### Laporan
-![Reports](screenshots/Reports.png)
+![Reports](docs/screenshots/Reports.png)
 
 ### Pengaturan
-![Settings](screenshots/Settings.png)
+![Settings](docs/screenshots/Settings.png)
 ```
 
 screenshots/
