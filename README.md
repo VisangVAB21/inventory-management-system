@@ -129,23 +129,27 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 ## Screenshot
 
 ### Dashboard Admin
-![Dashboard Admin](https://user-images.githubusercontent.com/xxxxx/dashboard-admin.png)
+![Dashboard Admin](https://ibb.co.com/VcZscV5z)
 
 ### Dashboard Manajer
-![Dashboard Manager](https://user-images.githubusercontent.com/xxxxx/dashboard-manager.png)
+![Dashboard Manager](https://ibb.co.com/cKWz3Jyp)
+
+### Dashboard Staff
+![Dashboard Staff](https://ibb.co.com/gFvvZwbm)
 
 ### Manajemen Produk
-![Products](https://user-images.githubusercontent.com/xxxxx/products.png)
+![Products](https://ibb.co.com/KzS9J380)
 
 ### Barang Masuk
-![Stock In](https://user-images.githubusercontent.com/xxxxx/stock-in.png)
+![Stock In](https://ibb.co.com/VYtnYvkF)
 
 ### Laporan
-![Reports](https://user-images.githubusercontent.com/xxxxx/reports.png)
+![Reports](https://ibb.co.com/qYRYLtQB)
 
 ### Pengaturan
-![Settings](https://user-images.githubusercontent.com/xxxxx/settings.png)
+![Settings](https://ibb.co.com/bg36X89c)
 ```
+
 screenshots/
 ├── dashboard-admin.png
 ├── dashboard-manager.png
