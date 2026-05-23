@@ -246,24 +246,49 @@ Swal.fire({
 
     <!-- User Info + Logout -->
     <div class="p-4 border-t border-slate-700">
-        <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="text-white text-sm font-bold">
-                    {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
-                </span>
-            </div>
-            <div class="overflow-hidden">
-                <p class="text-white text-sm font-semibold truncate">{{ Auth::user()->name }}</p>
-                <p class="text-gray-400 text-xs capitalize">{{ Auth::user()->role }}</p>
-            </div>
+    <div class="flex items-center gap-3 mb-3">
+        <div class="w-9 h-9 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center flex-shrink-0">
+            <span class="text-white text-sm font-bold">
+                {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
+            </span>
         </div>
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            <button class="w-full flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 px-3 py-2 rounded-lg text-sm font-medium transition-all">
-                <i class="fa-solid fa-right-from-bracket"></i> Logout
-            </button>
-        </form>
+        <div class="overflow-hidden">
+            <p class="text-white text-sm font-semibold truncate">{{ Auth::user()->name }}</p>
+            <p class="text-gray-400 text-xs capitalize">{{ Auth::user()->role }}</p>
+        </div>
     </div>
+
+    <form method="POST" action="{{ route('logout') }}" id="logoutForm">
+        @csrf
+        {{-- ✅ type="button" agar tidak langsung submit --}}
+        <button type="button" onclick="confirmLogout()"
+            class="w-full flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 px-3 py-2 rounded-lg text-sm font-medium transition-all">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </form>
+</div>
+
+<script>
+function confirmLogout() {
+    Swal.fire({
+        title: 'Keluar dari aplikasi?',
+        text: 'Kamu akan keluar dari sesi ini',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: '<i class="fa-solid fa-right-from-bracket mr-1"></i> Ya, Logout',
+        cancelButtonText: '<i class="fa-solid fa-xmark mr-1"></i> Tidak',
+        confirmButtonColor: '#ef4444',
+        cancelButtonColor: '#475569',
+        background: '#1e293b',
+        color: '#e2e8f0',
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.getElementById('logoutForm').submit();
+        }
+    });
+}
+</script>
 
 </aside>
     <!-- MAIN -->
@@ -309,6 +334,28 @@ function toggleMenu(name) {
 }
 
 
+</script>
+
+<script>
+function confirmLogout() {
+    Swal.fire({
+        title: 'Keluar dari aplikasi?',
+        text: 'Kamu akan keluar dari sesi ini',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: '<i class="fa-solid fa-right-from-bracket mr-1"></i> Ya, Logout',
+        cancelButtonText: '<i class="fa-solid fa-xmark mr-1"></i> Tidak',
+        confirmButtonColor: '#ef4444',
+        cancelButtonColor: '#475569',
+        background: '#1e293b',
+        color: '#e2e8f0',
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.getElementById('logoutForm').submit();
+        }
+    });
+}
 </script>
 </body>
 @stack('scripts')
