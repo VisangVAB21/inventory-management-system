@@ -15,6 +15,7 @@ class SettingController extends Controller
             'app_name' => config('app.name', 'Stockify')
         ]);
 
+        // ✅ Kirim $setting ke view yang sesuai
         return view('admin.settings.index', compact('setting'));
     }
 
@@ -23,13 +24,12 @@ class SettingController extends Controller
         $setting = Setting::firstOrCreate([]);
 
         $data = $request->only([
-            'app_name', 'app_description', 'email', 
+            'app_name', 'app_description', 'email',
             'phone', 'address', 'facebook', 'instagram', 'whatsapp'
         ]);
 
         // Upload Logo
         if ($request->hasFile('app_logo')) {
-            // Hapus logo lama jika ada
             if ($setting->app_logo) {
                 Storage::disk('public')->delete($setting->app_logo);
             }
@@ -45,6 +45,14 @@ class SettingController extends Controller
         }
 
         $setting->update($data);
+
+        // ✅ Return JSON agar fetch di blade bisa baca response
+        if ($request->expectsJson() || $request->hasHeader('Accept') && str_contains($request->header('Accept'), 'application/json')) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Pengaturan berhasil disimpan!'
+            ]);
+        }
 
         return redirect()->back()->with('success', 'Pengaturan berhasil disimpan!');
     }

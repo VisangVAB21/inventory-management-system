@@ -149,10 +149,10 @@ Route::middleware(['auth'])->group(function () {
   // === ROUTE SETTINGS ===
 // === ROUTE SETTINGS ===
 // Settings Route
-Route::prefix('admin')->middleware('auth')->group(function () {
+Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::get('/settings', [App\Http\Controllers\Admin\SettingController::class, 'index'])
          ->name('admin.settings');
-         
+
     Route::put('/settings', [App\Http\Controllers\Admin\SettingController::class, 'update'])
          ->name('admin.settings.update');
 });
