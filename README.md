@@ -37,7 +37,7 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 
 **Inventory Management System** adalah aplikasi web berbasis Laravel yang dirancang untuk mempermudah pengelolaan stok barang di gudang atau toko. Sistem ini mendukung multi-role user, pencatatan aktivitas, laporan stok, serta manajemen supplier dan kategori produk.
 
-> Dibangun dengan prinsip clean code, UI dark/light mode, dan alur kerja yang terstruktur berdasarkan role.
+> Dibangun dengan prinsip clean code, UI dark, dan alur kerja yang terstruktur berdasarkan role.
 
 ---
 
@@ -100,7 +100,6 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 | [SweetAlert2](https://sweetalert2.github.io) | 11.x | Notifikasi UI |
 | [Chart.js](https://chartjs.org) | 4.x | Grafik Dashboard |
 | [DomPDF](https://github.com/barryvdh/laravel-dompdf) | — | Export PDF |
-| [Maatwebsite Excel](https://laravel-excel.com) | 3.x | Export Excel |
 | [Font Awesome](https://fontawesome.com) | 6.x | Icon Library |
 
 ---
@@ -121,8 +120,6 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 | Activity Log | ✅ | ✅ | ❌ |
 
 ---
-
-## Screenshot
 
 >
 ## Screenshot
@@ -256,7 +253,7 @@ Akses aplikasi di: **http://localhost:8000**
 | Role | Email | Password |
 |------|-------|----------|
 | Admin | admin@gmail.com | password |
-| Manajer | manager@gamil.com | password |
+| Manajer | manager@gmail.com | password |
 | Staff | staff@gmail.com | password |
 
 ---
