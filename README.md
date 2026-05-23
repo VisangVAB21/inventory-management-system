@@ -125,7 +125,7 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 ## Screenshot
 
 >
-## 📸 Screenshot
+## Screenshot
 
 ### Dashboard Admin
 ![Dashboard Admin](docs/screenshots/dashboard-admin.png)
@@ -255,9 +255,9 @@ Akses aplikasi di: **http://localhost:8000**
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@stockify.com | password |
-| Manajer | manager@stockify.com | password |
-| Staff | staff@stockify.com | password |
+| Admin | admin@gmail.com | password |
+| Manajer | manager@gamil.com | password |
+| Staff | staff@gmail.com | password |
 
 ---
 
@@ -275,7 +275,7 @@ APP_URL=http://localhost
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=inventory_db
+DB_DATABASE=stockify_db
 
 # Mail (opsional)
 MAIL_MAILER=smtp
@@ -408,7 +408,7 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
 
 **Dibuat dengan menggunakan Laravel & Tailwind CSS**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VisangVAB21)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/visang-arya-bangga-26513a3b5)
 
 </div>
