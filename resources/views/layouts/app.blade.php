@@ -336,27 +336,6 @@ function toggleMenu(name) {
 
 </script>
 
-<script>
-function confirmLogout() {
-    Swal.fire({
-        title: 'Keluar dari aplikasi?',
-        text: 'Kamu akan keluar dari sesi ini',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: '<i class="fa-solid fa-right-from-bracket mr-1"></i> Ya, Logout',
-        cancelButtonText: '<i class="fa-solid fa-xmark mr-1"></i> Tidak',
-        confirmButtonColor: '#ef4444',
-        cancelButtonColor: '#475569',
-        background: '#1e293b',
-        color: '#e2e8f0',
-        reverseButtons: true
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.getElementById('logoutForm').submit();
-        }
-    });
-}
-</script>
 </body>
 @stack('scripts')
 </html>
