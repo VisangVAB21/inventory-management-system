@@ -1,5 +1,5 @@
 
-# 📦 Inventory Management System
+# Inventory Management System
 
 <div align="center">
 
@@ -126,6 +126,25 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 
 > *(Tambahkan screenshot aplikasi di sini)*
 
+## Screenshot
+
+### Dashboard Admin
+![Dashboard Admin](https://user-images.githubusercontent.com/xxxxx/dashboard-admin.png)
+
+### Dashboard Manajer
+![Dashboard Manager](https://user-images.githubusercontent.com/xxxxx/dashboard-manager.png)
+
+### Manajemen Produk
+![Products](https://user-images.githubusercontent.com/xxxxx/products.png)
+
+### Barang Masuk
+![Stock In](https://user-images.githubusercontent.com/xxxxx/stock-in.png)
+
+### Laporan
+![Reports](https://user-images.githubusercontent.com/xxxxx/reports.png)
+
+### Pengaturan
+![Settings](https://user-images.githubusercontent.com/xxxxx/settings.png)
 ```
 screenshots/
 ├── dashboard-admin.png
