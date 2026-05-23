@@ -124,30 +124,27 @@ Dirancang untuk mengelola barang masuk, barang keluar, kategori, supplier, dan m
 
 ## Screenshot
 
-> *(Tambahkan screenshot aplikasi di sini)*
-
-## Screenshot
-
+>
 ### Dashboard Admin
-![Dashboard Admin](https://ibb.co.com/VcZscV5z)
+![Dashboard Admin](https://ibb.co.com/VcZscV5z/dashboard-admin.png)
 
 ### Dashboard Manajer
-![Dashboard Manager](https://ibb.co.com/cKWz3Jyp)
+![Dashboard Manager](https://ibb.co.com/cKWz3Jyp/dashboard-manajer.png)
 
 ### Dashboard Staff
-![Dashboard Staff](https://ibb.co.com/gFvvZwbm)
+![Dashboard Staff](https://ibb.co.com/gFvvZwbm/dashboard-staff.png)
 
 ### Manajemen Produk
-![Products](https://ibb.co.com/KzS9J380)
+![Products](https://ibb.co.com/KzS9J380/product.png)
 
 ### Barang Masuk
-![Stock In](https://ibb.co.com/VYtnYvkF)
+![Stock In](https://ibb.co.com/VYtnYvkF/stock-in.png)
 
 ### Laporan
-![Reports](https://ibb.co.com/qYRYLtQB)
+![Reports](https://ibb.co.com/qYRYLtQB/reports.png)
 
 ### Pengaturan
-![Settings](https://ibb.co.com/bg36X89c)
+![Settings](https://ibb.co.com/bg36X89c/Settings.png)
 ```
 
 screenshots/
