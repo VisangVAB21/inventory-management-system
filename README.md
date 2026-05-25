@@ -406,6 +406,6 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
 **Dibuat dengan menggunakan Laravel & Tailwind CSS**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VisangVAB21)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/visang-arya-bangga-26513a3b5)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/visang-arya-bangga-26513a3b5/)
 
 </div>
