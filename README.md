@@ -213,7 +213,7 @@ Buka file `.env` dan sesuaikan:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=inventory_db
+DB_DATABASE=stockify_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```

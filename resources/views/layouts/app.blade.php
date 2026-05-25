@@ -196,7 +196,7 @@ Swal.fire({
 
         <!-- ===== SISTEM ===== -->
         @if(in_array(auth()->user()->role, ['admin','manager']))
-        @php $sistemActive = request()->is('users*') || request()->is('activity*') || request()->is('settings*'); @endphp
+        @php $sistemActive = request()->is('users*') || request()->is('activity*') || request()->is('admin/settings*'); @endphp
         <div>
             <button onclick="toggleMenu('sistem')"
                 class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg transition-all text-sm font-medium
@@ -206,29 +206,28 @@ Swal.fire({
                     Sistem
                 </span>
                 <i id="icon-sistem" class="fa-solid fa-chevron-down text-xs transition-transform duration-300
-                   {{ $sistemActive ? 'rotate-180' : '' }}"></i>
+                {{ $sistemActive ? 'rotate-180' : '' }}"></i>
             </button>
 
             <div id="menu-sistem"
-                 class="overflow-hidden transition-all duration-300 ease-in-out
-                 {{ $sistemActive ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0' }}">
+                class="overflow-hidden transition-all duration-300 ease-in-out
+                {{ $sistemActive ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0' }}">
                 <div class="mt-1 ml-4 pl-3 border-l border-slate-600 space-y-1 py-1">
 
                     @if(auth()->user()->role === 'admin')
                     <a href="{{ route('users.index') }}"
-                       class="flex items-center px-3 py-2 rounded-lg transition-all text-sm
-                       {{ request()->is('users*') ? 'bg-blue-600/20 text-blue-400 font-semibold' : 'text-gray-400 hover:bg-slate-700 hover:text-white' }}">
+                    class="flex items-center px-3 py-2 rounded-lg transition-all text-sm
+                    {{ request()->is('users*') ? 'bg-blue-600/20 text-blue-400 font-semibold' : 'text-gray-400 hover:bg-slate-700 hover:text-white' }}">
                         <i class="fa-solid fa-users w-5 mr-3 text-center"></i> Kelola User
                     </a>
                     @endif
 
                     <a href="{{ route('activity.index') }}"
-                       class="flex items-center px-3 py-2 rounded-lg transition-all text-sm
-                       {{ request()->is('activity*') ? 'bg-blue-600/20 text-blue-400 font-semibold' : 'text-gray-400 hover:bg-slate-700 hover:text-white' }}">
+                    class="flex items-center px-3 py-2 rounded-lg transition-all text-sm
+                    {{ request()->is('activity*') ? 'bg-blue-600/20 text-blue-400 font-semibold' : 'text-gray-400 hover:bg-slate-700 hover:text-white' }}">
                         <i class="fa-solid fa-clock-rotate-left w-5 mr-3 text-center"></i> Activity Log
                     </a>
 
-                   {{-- Pengaturan: hanya admin --}}
                     @if(auth()->user()->role === 'admin')
                     <a href="{{ route('admin.settings') }}"
                     class="flex items-center px-3 py-2 rounded-lg transition-all text-sm
@@ -260,7 +259,7 @@ Swal.fire({
 
     <form method="POST" action="{{ route('logout') }}" id="logoutForm">
         @csrf
-        {{-- ✅ type="button" agar tidak langsung submit --}}
+        {{-- type="button" agar tidak langsung submit --}}
         <button type="button" onclick="confirmLogout()"
             class="w-full flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 px-3 py-2 rounded-lg text-sm font-medium transition-all">
             <i class="fa-solid fa-right-from-bracket"></i> Logout
